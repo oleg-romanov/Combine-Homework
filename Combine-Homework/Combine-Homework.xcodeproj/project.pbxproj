@@ -13,6 +13,12 @@
 		EA9C384B27CF6773003D01A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9C384A27CF6773003D01A0 /* Assets.xcassets */; };
 		EA9C384E27CF6773003D01A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9C384C27CF6773003D01A0 /* LaunchScreen.storyboard */; };
 		EA9C385727CF69D5003D01A0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EA9C385627CF69D5003D01A0 /* SnapKit */; };
+		EA9C385D27D098FE003D01A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C385C27D098FE003D01A0 /* ContentView.swift */; };
+		EA9C385F27D09B70003D01A0 /* ScoreLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C385E27D09B70003D01A0 /* ScoreLabel.swift */; };
+		EA9C386227D09D6F003D01A0 /* CatFactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C386127D09D6F003D01A0 /* CatFactsService.swift */; };
+		EA9C386427D09D7B003D01A0 /* DogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C386327D09D7B003D01A0 /* DogsService.swift */; };
+		EA9C386727D09DF3003D01A0 /* CatFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C386627D09DF3003D01A0 /* CatFacts.swift */; };
+		EA9C386927D09E02003D01A0 /* DogsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C386827D09E02003D01A0 /* DogsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		EA9C384A27CF6773003D01A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9C384D27CF6773003D01A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA9C384F27CF6773003D01A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9C385C27D098FE003D01A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA9C385E27D09B70003D01A0 /* ScoreLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreLabel.swift; sourceTree = "<group>"; };
+		EA9C386127D09D6F003D01A0 /* CatFactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsService.swift; sourceTree = "<group>"; };
+		EA9C386327D09D7B003D01A0 /* DogsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsService.swift; sourceTree = "<group>"; };
+		EA9C386627D09DF3003D01A0 /* CatFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFacts.swift; sourceTree = "<group>"; };
+		EA9C386827D09E02003D01A0 /* DogsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9C385827CFE577003D01A0 /* MainFiles */,
+				EA9C386027D09D5B003D01A0 /* Services */,
 				EA9C385A27CFE6A5003D01A0 /* Modules */,
 				EA9C385927CFE5C6003D01A0 /* Resourses */,
 				EA9C384F27CF6773003D01A0 /* Info.plist */,
@@ -85,9 +98,38 @@
 		EA9C385A27CFE6A5003D01A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				EA9C385B27D098EB003D01A0 /* VIews */,
 				EA9C384527CF6771003D01A0 /* ViewController.swift */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		EA9C385B27D098EB003D01A0 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C385C27D098FE003D01A0 /* ContentView.swift */,
+				EA9C385E27D09B70003D01A0 /* ScoreLabel.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		EA9C386027D09D5B003D01A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C386527D09DA6003D01A0 /* Models */,
+				EA9C386127D09D6F003D01A0 /* CatFactsService.swift */,
+				EA9C386327D09D7B003D01A0 /* DogsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EA9C386527D09DA6003D01A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA9C386627D09DF3003D01A0 /* CatFacts.swift */,
+				EA9C386827D09E02003D01A0 /* DogsResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9C386727D09DF3003D01A0 /* CatFacts.swift in Sources */,
+				EA9C386927D09E02003D01A0 /* DogsResponse.swift in Sources */,
+				EA9C386227D09D6F003D01A0 /* CatFactsService.swift in Sources */,
 				EA9C384627CF6771003D01A0 /* ViewController.swift in Sources */,
 				EA9C384227CF6771003D01A0 /* AppDelegate.swift in Sources */,
+				EA9C385D27D098FE003D01A0 /* ContentView.swift in Sources */,
+				EA9C385F27D09B70003D01A0 /* ScoreLabel.swift in Sources */,
 				EA9C384427CF6771003D01A0 /* SceneDelegate.swift in Sources */,
+				EA9C386427D09D7B003D01A0 /* DogsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +362,6 @@
 				INFOPLIST_FILE = "Combine-Homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,7 +389,6 @@
 				INFOPLIST_FILE = "Combine-Homework/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
